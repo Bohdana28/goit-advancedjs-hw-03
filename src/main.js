@@ -39,7 +39,7 @@ function onSearch(event) {
 
       if (!images || images.length === 0) {
         iziToast.error({
-          massage: "Sorry, there are no images matching your search query. Please try again!",
+          message: "Sorry, there are no images matching your search query. Please try again!",
           position: "topRight",
         });
         return;
@@ -49,7 +49,7 @@ function onSearch(event) {
     })
     .catch(() => {
       iziToast.error({
-        massage: "Oops! Something went wrong. Please try again later.",
+        message: "Oops! Something went wrong. Please try again later.",
         position: "topRight",
       });
     })
